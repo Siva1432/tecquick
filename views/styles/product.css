@@ -1,0 +1,18 @@
+ li{
+	padding:10px;
+	list-style:none;
+}
+small{
+	color:blue;
+	
+}
+.productslist{
+	border:1px solid #E1E1E1;
+	padding:10px;
+}
+div .row{
+	padding:10px;
+}
+ .filter{
+	float:right;
+}

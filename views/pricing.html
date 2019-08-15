@@ -1,0 +1,188 @@
+ <head>
+      <meta name="veiwport" content="width:device-width">
+        <meta charset="UTF-8">
+        <link href="./styles/pricing.css" rel="stylesheet" type="text/css"> 
+ </head>
+ 
+ 
+ 
+ 
+              <div class="container-fluid well productpricing" ng-controller="cartctrl">
+                  
+                  <div class="container pricing-head-wrap">
+                       <div class="hero">
+           <div class="container name">
+               <h1>
+                   PRICING
+                   <BR>
+                   <small>Simple And Transperent .pay as you go</small>
+               </h1>
+           </div>
+       </div>
+       <div class="page">
+           <div class="container boxes">
+               <div class="container plans">
+                   <div class="flex-container">
+                       
+                            <ul class="list">
+                           <li ng-repeat="pro in plans">
+                               <div class="header" id={{pro.name}}>
+                              
+                               <span class="plan-name"><strong>{{pro.name}}</strong></span>
+                               <span class="plan-price">
+                                   "$"
+                                   <span class="price">{{pro.price}}</span>
+                                   "/mo"
+                               </span>
+                           </div>
+                           <section>
+                               
+                               
+                                     <div class="item speclist">
+                                          <span class="item-icon">
+                                               <img src="https://www.algolia.com/static_assets/images/pricing/records-a6bc3063.svg">
+                                           </span> 
+                                           <span class="item-title">Free Hosting: {{pro.data.hosting}}</span> 
+                                           <span class="item-subtitle">Per Houre</span> 
+                                           <span class="item-desc">
+                                               <span class="clearfix"></span>
+                                               90¢ / 1,000
+                                              <span class="clearfix"></span>
+                                              Additional Load
+                                           </span> 
+                                      </div> 
+                                      <div class="item"> 
+                                          <span class="item-icon">
+                                               <img src="https://www.algolia.com/static_assets/images/pricing/operations-fb1cbd74.svg">
+                                          </span>
+                                          <span class="item-title">Extensions & Plugin Support: {{pro.data.extention}}</span>
+                                          <span class="item-subtitle">Operations / Month</span> 
+                                          <span class="item-desc"><span class="clearfix"></span>6¢ / 1,000<span class="clearfix"></span>Additional Operations</span>
+                                      </div>
+                                      <div class="item"> 
+                                          <span class="item-icon"> <img src="https://www.algolia.com/static_assets/images/pricing/support-b50c32a1.svg"> </span>
+                                          <span class="item-title small-title">Email-Support: {{pro.data.emailservices}}</span>
+                                      </div> 
+                                         <div class="item"> 
+                                          <span class="item-icon"> <img src="https://www.algolia.com/static_assets/images/pricing/support-b50c32a1.svg"> </span>
+                                          <span class="item-title small-title">UX-Guidance: {{pro.data.uxguidance}}</span>
+                                      </div> 
+                                 <div class="item-btn">
+                                  <button type="button" class="btn btn-info" id="pro.name" name="select" ng-click="selectplan(this.pro.name)">Select</button>
+                                 </div>
+                                 
+                                  
+                           </section>
+                           </li>
+                                   </ul>
+                       
+                       
+                       </div>
+                   
+                 <div class="container box-container">  
+                    <div class="last-column"> 
+                    <div class="container">
+                           <div class="col-sm-4 box-1">
+                                <div class="box-1-text"> 
+                                    <h4>Hacker</h4> 
+                                    <h3>FREE</h3> 
+                                 <button class="btn btn-info" >Signup now</button> 
+                                </div>
+                           </div> 
+                        <div class="col-md-4 ">
+                              
+                             <ul class="feature-list feature-list-hacker">
+                                  <li class="feature-list-item"> 
+                                      <span class="item-icon">
+                                           <img src="https://www.algolia.com/static_assets/images/pricing/icon-record-color-a580cff8.svg">
+                                       </span> 
+                                       <span class="item-title">10,000</span> 
+                                       <span class="item-subtitle">Records</span>
+                                  </li>
+                                  <li class="feature-list-item">
+                                       <span class="item-icon">
+                                            <img src="https://www.algolia.com/static_assets/images/pricing/icon-operation-color-5fafd3f2.svg"> 
+                                       </span>
+                                       <span class="item-title">100,000</span> 
+                                       <span class="item-subtitle">Operations / Month</span>
+                                 </li>
+                             </ul> 
+                             
+                             <div class="row spacer30"></div>
+                        </div>
+                        <div class="col-md-4 text-center"> 
+                            
+                             <div class="row powered-by"> 
+                                 <p>
+                                     <span>Powered by</span>
+                                     <img src="https://res.cloudinary.com/hilnmyskv/image/upload/v1461180079/logo-algolia.svg" alt="Algolia Logo">
+                                     <span><a href="powered-by-algolia.zip" alt="Download Algolia assets"><img src="https://res.cloudinary.com/hilnmyskv/image/upload/v1461179992/icon-download.svg" alt="download" width="19px"></a></span>
+                                 </p> 
+                                 <p><span>The Hacker plan requires you to display a small Algolia logo next to the search results.</span></p> 
+                             </div>
+                            
+                        </div>
+                        </div>
+                   </div> 
+                   </div>
+                   
+                   
+              
+              
+              
+              <div class="container-details container">
+                  <div class="spacer80"></div>
+                  <div class="inner-container">
+                      <!--<div class="col-md-6 text-center">
+                          <h2> 
+                              <span> 
+                                  <img src="https://www.algolia.com/static_assets/images/pricing/icon-record-color-a580cff8.svg"> 
+                              </span>
+                               What is a Record? 
+                          </h2>
+                          <p >A record is a schemaless object that contains data to be searched. An unlimited number of attributes is allowed (total size not to exceed 10KB). The number of records is multiplied by the number of ranking strategies.</p>
+                          <a class="smooth-anchor" href="#faq">Learn more</a>
+                      </div>
+                      <div class="col-md-6 text-center">
+                          <h2> 
+                              <span> 
+                                  <img src="https://www.algolia.com/static_assets/images/pricing/icon-record-color-a580cff8.svg"> 
+                              </span>
+                               What is a Record? 
+                          </h2>
+                          <p >A record is a schemaless object that contains data to be searched. An unlimited number of attributes is allowed (total size not to exceed 10KB). The number of records is multiplied by the number of ranking strategies.</p>
+                          <a class="smooth-anchor" href="#faq">Learn more</a>
+                      </div>-->
+                      
+                      <section class="container-list-big">
+                          <h2 class="text-center underlined">Included in every plan</h2>
+                          <div class="spacer100"></div>
+                          <div class="row">
+                              <ul class="plan-features-list">
+                                  <li class="col-md-12"> 
+                                      <div class="col-md-1"> <img src="https://www.algolia.com/static_assets/images/pricing/datacenter-location-62ccdb6a.svg"> </div> <div class="col-md-3"> <h4>Datacenters In<br> 15 Regions</h4> </div> <div class="col-md-8"> <p></p><p>Select a primary region closest to your infrastructure and users. Extend your low-latency search globally with Algolia DSN, now available in the US (East, Central and West), Europe (France, Germany and The Netherlands), Asia (Singapore, Hong Kong and Tokyo), India, Australia, Canada, Brazil, South Africa and Russia.</p><p></p> </div> 
+                                  </li>
+                                  <li class="col-md-12">
+                                       <div class="col-md-1"> <img src="https://www.algolia.com/static_assets/images/pricing/clusters-e916f361.svg"> </div> <div class="col-md-3"> <h4>100% Uptime - Triple<br> Server Redundancy</h4> </div> <div class="col-md-8"> <p></p><p>Three separate search instances are used to maximize the performance and availability of your search. Even if two servers are down, your search is up and running.</p><p></p> </div>
+                                  </li>
+                                  <li class="col-md-12"> <div class="col-md-1"> <img src="https://www.algolia.com/static_assets/images/pricing/unlimited-team-74208952.svg"> </div> <div class="col-md-3"> <h4>Unlimited<br> Collaboration</h4> </div> <div class="col-md-8"> <p></p><p>Add an unlimited number of teammates to your Algolia account. Collaborate freely without running into limits.</p><p></p> </div> </li>
+                                  <li class="col-md-12"> <div class="col-md-1"> <img src="https://www.algolia.com/static_assets/images/pricing/unlimited-team-74208952.svg"> </div> <div class="col-md-3"> <h4>Unlimited<br> Collaboration</h4> </div> <div class="col-md-8"> <p></p><p>Add an unlimited number of teammates to your Algolia account. Collaborate freely without running into limits.</p><p></p> </div> </li>
+                                  <li class="col-md-12"> <div class="col-md-1"> <img src="https://www.algolia.com/static_assets/images/pricing/analytics-130ea10d.svg"> </div> <div class="col-md-3"> <h4>Analytics<br> Dashboard</h4> </div> <div class="col-md-8"> <p></p><p>See what your users are searching for and how often. Every Algolia account comes with a point-and-click dashboard full of valuable insights.</p><p></p> </div> </li>
+                              </ul>
+                          </div>
+                      </section>
+                  </div>
+              </div>
+              
+              
+              
+           </div>
+       </div>
+      
+                     
+                      
+                  </div>
+                  
+                  
+              </div>
+              </div>

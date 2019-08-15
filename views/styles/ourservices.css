@@ -1,0 +1,92 @@
+#header h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+#section-1,#section-2{
+    padding:  40px 60px;
+   border: 0px solid red;
+    
+}
+#section-1 #para-1{
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    color: #a1a1a1;
+    font-weight: 400;
+    line-height: 22px;
+    font-size: 13px;
+    
+}
+body{
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 5px;
+}
+#section-2 #para-1{
+   
+    border-left: 2px solid #a1a1a1;
+     color: #a1a1a1;
+    font-weight: 400;
+    line-height: 22px;
+    font-size: 13px;
+    
+}
+#section-2 a{
+    
+    font-size: 50px;
+    
+   padding: 50px 20px 50px 0px;
+    
+    
+ }
+#column-1{
+    border: 0px solid red;
+}
+#section-3{
+    padding-left: 60px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    
+     
+}
+#icon-1{
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #19baec;
+    display: block;
+    float: left;
+    margin-right: 15px; 
+    text-align: center;
+        font-size: 35px;
+        position: relative;
+    color: #19baec;    
+}
+#icon-1 a{
+   
+    position: absolute;
+    top:20px;
+    left: 20px;
+}
+#content-1{
+    display: block;
+      margin-top: -20px;
+}
+#icon1 span{
+   
+    color: #19baec;
+    
+}
+#content-1 {
+    color: #a1a1a1;
+    font-size: 13px;
+    line-height: 22px;
+  
+}
+#content{
+    padding-bottom: 40px;
+   
+    padding-top: 20px;
+    
+}
+#icon-2{
+    color: #19baec;
+}

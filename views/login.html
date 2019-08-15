@@ -1,0 +1,84 @@
+
+<link rel="stylesheet" href="/styles/login.css" type="text/css" />
+
+ <div class="container main-wrap" ng-controller="loginctrl">
+            <div class="header">
+             <h1>   Log in</h1>
+            </div>
+           <div class="container wrap-1">
+            <form action=""method="" class="form" name="loginform">
+               <div class="email input">
+                      <label>Your Email</label>
+                      <input type="email" required class="form-control" id="email" ng-model="user.email" placeholder="abcd@gmail.com">
+               </div>
+               <div class="password input">
+                   <label>password</label>
+                      <input type="password" required class="form-control" id="pwd" ng-model="user.password" placeholder="* * * * * *">
+               </div>
+               <div class="signin input">
+                   <input type="submit" ng-disabled="loginform.$invalid" ng-click="login()" class="btn btn-primary">
+               </div>
+               
+             </form>
+            </div>
+            <div class="wrap-3">
+              <div class="forgot">
+                   <p>Forgot Password ?</p>
+               </div>
+              
+               <div class="facebook input">
+                   <button class="btn btn-twitter twitter">twitter</button>
+               </div>
+               <a class="btn anchor input" href="#"><span class=""></span>facebook</a>
+                <div class="forgot">
+                    Don't have an Account ?'
+                </div>
+             <div><button type="submit"  ng-hide="showSignUp" ng-click="displaySignUp()" class="btn btn-primary btn-signup">SignUp</button></div>
+             
+            </div>
+        
+        
+        
+             <div class="signUp-wrap"  ng-show="showSignUp" >  
+         
+         <div class="container wrap-1">
+         <form role="form" class="form" name="signUpform" >
+             <div class="signUp-header">
+             <h1>SignUp</h1>
+         </div>
+  <div class="form-group email input">
+    <label for="username">User Name:</label>
+    <input type="text" required class="form-control" id="email" ng-model="newUser.username">
+  </div>
+  <div class="form-group password input">
+    <label for="email">Email:</label>
+    <input type="email" required class="form-control" id="email" ng-model="newUser.email">
+  </div>
+  <div class="form-group password input">
+    <label for="pwd">Password:</label>
+    <input type="password" required class="form-control" id="pwd" ng-model="newUser.password">
+  </div>
+  <div class="form-group password input">
+    <label for="pwd">Confirm Password:</label>
+    <input type="password" required class="form-control" id="pwd" ng-model="newUser.Cpassword">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" required ng-model"terms">I Agree to the Terms and Conditions</label>
+  </div>
+  <button type="submit" ng-disabled="signUpform.$invalid" ng-click="signUp()" class="btn btn-primary">SignUp</button>
+  
+  
+  
+</form>
+</div>
+<!--<button type="submit"  ng-click="logout()" class="btn btn-primary">Log Out</button>-->
+  </div> 
+        
+            
+          </div>
+            
+     
+
+
+<!---- this is new-->
+

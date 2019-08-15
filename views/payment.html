@@ -1,0 +1,73 @@
+<head>
+  <link rel="stylesheet" href="./styles/payment.css" type="text/css" />
+</head>
+
+<div class="container main">
+        <div class="wrap">
+            <div class="header">
+                <div class="section-header">
+                    <h2 style="margin: 0 0 8px 0;">Your total is 348$</h2>
+                    <span class="section-meta">pay securely with a credit card or paypal</span>
+                </div>
+            </div>
+            
+            <div class="container section-content">
+                <div class="inputs margin">
+                    <div class="payment-types">
+                       <div class="col-md-6 card active">
+                           <span class="glyphicon glyphicon-credit-card"></span>
+                       </div>
+                       <div class="col-sm-6 card" onmousedown="page()">
+                           <span class="glyphicon glyphicon-credit-card"></span>
+                       </div>
+                    </div>
+                    
+                    <div class="form">
+                        <form action="" method="POST">
+                            <div class="details">
+                                <label>Email</label>
+                                 <input type="email"  name="email" class="email" placeholder="Email">
+                            </div>
+                            <div class="name">
+                                <label>Name Of the card</label>
+                                 <input type="text"  name="name" class="details"placeholder="Name Of the card">
+                            </div>
+                            <div class="number">
+                                <label>card Number</label>
+                                 <input type="number"  name="number" class="details"placeholder="card Number">
+                            </div>
+                           <div >
+                            <div class=" codes">
+                                <label>MM/YY</label>
+                                <input type="number" maxlength="7" class="details" name="date"placeholder="MM/YY">
+                            </div>
+                            
+                             <div class=" codes">
+                                <label>CVC</label>
+                                <input type="number" maxlength="3" class="details" name="date"placeholder="CVC">
+                            </div>
+                            
+                             <div class=" codes">
+                                <label>Zip/Postalcode</label>
+                                <input type="number" class="details" name="zip"placeholder="Zip/Postalcode">
+                            </div>
+                            </div>
+                           <!-- <div class="box">
+                                <label>Save this card purchases</label>
+                                <input type="checkbox" name="check" class="check">
+                                
+                            </div>-->
+                            
+                            <div class="buttons">
+                                 <div class="button-1 btn">
+                                    <button type="button" class="pay btn">PAY $25</label>
+                                   
+                                </div>
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>

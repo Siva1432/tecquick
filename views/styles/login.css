@@ -1,0 +1,204 @@
+.containerbox {
+    align-content:center;
+    margin-top:150px;
+              }
+.formcontainer{
+    width:33%;
+    margin:auto;
+    float:right;
+    
+}  
+.formcontainer input[type=checkbox]{
+    position:relative;
+    padding:0;
+    height:15px;
+    width:15px;
+}
+.ng-touched.ng-invalid{
+   
+   border:1px solid red; 
+}
+input.ng-valid{
+    border:1px solid green;
+}
+body{
+                padding: 0px;
+                margin: 0px;
+                background: #e1e1e1;
+            }
+            .main-wrap{
+                margin-top: 100px;
+                margin-bottom: 100px;
+                width: 40%;
+            
+                background: white;
+                text-align: center;
+                color: black;
+                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                 padding: 0px;
+            }
+            .header{
+                font-size: 30px;
+                font-weight: bold;
+                color: black;               
+                padding-top: 40px;
+                padding-bottom: 60px;
+               
+                
+            }
+            .wrap-1{
+                width: 90%;
+                margin-top: 20px;
+                text-align: left;
+            }
+            .wrap-1 .form input{
+                width: 95%;
+                
+                height: 40px;
+               border-radius:20px;
+                border: 0px solid #e1e1e1;
+                padding: 10px;
+                padding-left: 20px;
+              
+            }
+            .form input[type=checkbox]{
+                width:15px;
+                height:15px;
+                position:relative;
+                margin: 0 10px;
+            }
+            .form input[placeholder]{
+                font-weight: bold;
+                color: #a1a1a1;
+            }
+            .form{
+                width:90%;
+                margin:auto;
+            }
+            .form label{
+                color: #b1b1b1;
+                margin-bottom: 10px;
+                padding:0;
+                
+            }
+           
+            .signin{
+                 width: 45%;
+                padding: 10px 20px 10px 0px;
+                float:right;
+                
+                
+            }
+            .password{
+                margin:30px 0;
+            }
+            .form .signin input{
+                background : lightskyblue;
+            }
+            .signin input[value]{
+                font-weight: bold;
+                color: white;
+            }
+            .forgot{
+                font-size: 14px;
+                font-weight: bold;
+                color: black;
+                text-align: center;
+                width: 100%;
+                height: 40px;
+                opacity: 0.7;
+                
+                line-height: 40px;
+            }
+            .divider{
+                width: 100%;
+                height: 40px;
+                margin-top: 40px;
+                text-align: center;
+                color: black;
+                opacity: 0.4;
+                padding-top: 25px;
+                font-size: 13px;
+                font-weight: bold;
+            }
+           
+            .divider p::before{
+                content: "";
+                background: black;
+                width: 180px;
+                height: 1px;
+                position: relative;
+                margin: -10px 2px;
+                display: block;
+            }
+           
+            .divider p::after{
+                content: "";
+                background: black;
+                width: 170px;
+                height: 1px;
+                position: relative;
+                margin: -10px 250px;
+                display: block;
+            }
+            .facebook{
+                 width: 49%;
+                padding: 10px 20px 10px 0px;
+                display: inline-block;
+            }
+           .form .facebook input{
+                background:#3b5898;
+                background: lightgreen;
+                color: white;
+                font-size: 15px;
+                font-weight: bold;
+            }
+             .anchor{
+                  width: 49%;
+                padding: 10px 20px 10px 0px;
+                display: inline-block;
+                 background:#3b5898;
+                 
+                color: white;
+                font-size: 15px;
+                font-weight: bold;
+                border: 0px;
+                text-decoration: none;
+                border-radius: 20px;
+            }
+            .wrap-3{
+                margin: 0px;
+                width: 100%;
+                position:relative;
+                background: #f1f1f1;
+                margin-top: 20px;
+            }
+            .wrap-3 .forgot{
+                padding: 10px;
+                opacity: 0.4;
+                margin-bottom: 20px;
+            }
+            .wrap-3 a{
+                background: lightsteelblue
+            }
+            .btn-twitter{
+                padding:10px 45%;
+                border-radius: 20px;
+                background-color:skyblue;
+                color:white;
+            }
+            .btn-signup{
+                 padding:10px 25%;
+                border-radius: 20px;
+                background-color:green;
+                color:white;
+                border:none;
+                margin-bottom: 20px;
+            }
+            .signUp-wrap{
+                padding:10%;
+                text-align:left;
+            }
+            .signUp-header{
+                padding:20px 0;
+            }

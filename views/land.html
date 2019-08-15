@@ -1,0 +1,170 @@
+   <! DOCTYPE html>
+<html ng-app="homeModule">
+    <head>
+        <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link  data-semver="3.3.6" rel="stylesheet" href="/styles/land.css" />
+       <meta name="viewpoint" content="width:device-width">
+       <meta charset="UTF-8">
+        
+ <title >TecQuick</title>
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script data-require="ui-router@0.2.15" data-semver="0.2.15" src="//cdn.rawgit.com/angular-ui/ui-router/0.2.15/release/angular-ui-router.js"></script>
+ <script type="text/javascript" src="./scripts/controllers/scripts.js"></script>
+ <script type="text/javascript" src="./scripts/controllers/login.js"></script>
+ <script type="text/javascript" src="/scripts/services/loginservices.js"></script>
+ <script type="text/javascript" src="/scripts/controllers/cartctrl.js"></script>
+ <script type="text/javascript" src="/scripts/services/cartservices.js"></script>
+ <script type="text/javascript" >
+     scroll=function(){
+     
+      if(window.scrollY>=110){
+          
+      
+      var nav1=document.getElementById("mainNavbar");
+      var nav2=document.getElementById("mainNavbar1");
+      nav1.style.padding="5px 30px";
+      nav2.style.padding="5px 30px";
+      
+      }
+       else{
+      
+      var nav1=document.getElementById("mainNavbar");
+      var nav2=document.getElementById("mainNavbar1");
+      nav1.style.padding="5px 20px";
+      nav2.style.padding="5px 20px";
+       }
+  };
+ </script>
+ 
+    </head>
+    <body onscroll="scroll()" ng-controller="mainctrl">
+        
+        
+        
+        <div class="container-fluid" id="headderNav">
+            
+            <!---------navbar1--
+            <ul id="navbar1" class="nav navbar-nav">
+                        <li><a href="#"><span class="glyphicon glyphicon-map-marker"id="span"></span>D-no:1-230/AMainRoadDurgi </a></li> 
+                        <li><a href="#"><span class="glyphicon glyphicon-phone-alt"id="span"></span>+120204390220</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-send"id="span"></span>contact@sivanagaraju1432@gmail.com</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-tags"id="span"></span> Skype:sai</a></li>
+                    </ul>-->
+        
+        <!---------End of navbar1---->
+            <nav class="navbar navbar navbar-fixed-top" id="MainNav" >
+               
+                    
+                
+                <ul class="nav navbar-nav" id="mainNavbar">
+                   
+                    <li class="navbar-header"onmouseover="details()"onmouseout="detailsout()"><h2><a href="#"><large>Tec</large><small>Quick</small></a></h2></li>
+                     <li><a href="/#/home">Home</a></li>
+                    <li><a href="/#/contact">Cotact</a></li>
+                    
+                    <li><a ui-sref="pricing">Pricing</a></li>
+                    
+                    <li><a ui-sref="services">Our Services</a></li>
+                   
+                </ul>
+                <ul class="nav navbar-nav navbar-right" id="mainNavbar1"> 
+                    <li><a href="#">CART</a></li>
+                    <li><a ui-sref="login">Login</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+        
+        
+            
+                 <!-- social media icons-->
+         <div id="social-icons">
+                    
+                    <ul>
+                    <li><a href="#"title="youtube"><img  id="socialicon" src="./images/youtube.jpeg" alt="Youtube"/></a></li>
+                    <li><a href="#"title="facebook"> <img  id="socialicon" src="./images/facebook.jpeg" alt="Facebook"></a></li>
+                    <li><a href="#"title="linkedin"> <img  id="socialicon" src="./images/linkden.png" alt="Linkedin"></a></li>
+                    <li><a href="#"title="instagram"> <img id="socialicon"  src="./images/instagram.jpeg" alt="Instagram"></a></li>
+                    <li><a href="#"title="twitter"><img  id="socialicon" src="./images/twitter.jpeg" alt="Twitter"></a></li>
+                    </ul>
+                </div>
+                <!------------------------------------------------ end of social media icons------------------------------------------------------------------------->
+         
+<div id="UIdsplay" ui-view></div>
+         <!-------section-2----->
+         
+     
+         
+         
+         
+         <!-------End of section-2----->
+          <!-------footer----->
+          <div class="footer-wrap">
+              
+             <div class="container-fluid footer-in-wrap">
+                 <div class="svg-wrap" style="text-align:center;position:relative; top:-50px"><svg class="footer-svg" xmlht=""  style="width:800px; height:80px; margin:auto">
+                  <polygon points="0,0  400,80 800,0" fill="#2aa2ed"></polygon>
+              </svg>
+              </div>
+                  <div class="col-sm-4 footer-about">
+                   <!--footer-->
+                   <div class="footer-about-wrap">
+                       <div>
+                           <h3 class="footer-about-header">
+                             <strong>  More About US</strong>
+                           </h3>
+                           <p>
+                              We are an organisation commited to help and support our customers to develope their valuble business through intensive and user rich Web Marketing
+                           </p>
+                       </div>
+                   </div>
+              </div>
+              
+              <div class="col-sm-4 footer-social">
+                       <div>
+                           <ul class="footer-social-list">
+                               <li class="footer-social-header" ><h3 style="padding:10px 0" ><strong>Keep in Contact With US</strong></h3></li>
+                               <li><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</li>
+                               <li><i class="fa fa-youtube-square" aria-hidden="true"></i> Youtube</li>
+                               <li><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</li>
+                               <li><i class="fa fa-skype" aria-hidden="true"></i> Skype</li>
+                               <li><i class="fa fa-snapchat-square" aria-hidden="true"></i> Snap Chat</li>
+                               
+                           </ul>
+                       </div>
+                   </div>
+                 <div>
+                     
+                       <div class="col-sm-4 footer-contact">
+                       <div>
+                           <section>
+                               <h3 ><strong>www.tecquick.com</strong></h3>
+                              <div>
+                                 <p>
+                                 <div class="p-address">
+                                     <i class="fa fa-home" area-hidden="true"></i>
+                                 32525 Orleans St,</br>
+                                 Apt-#204,</br>
+                                  Mobile, Al, 36606</br>
+                                  United States</br>
+                                  </div></p> 
+                              </div>
+                              <div><p><i class="fa fa-phone" area-hidden="true"></i>+1-251-307-7346</p></div>
+                              <div><p><i class="fa fa-envelope-open" area-hidden="true"></i>sivanagaraju1432@gmail.com</p></div>
+                                  
+                              
+                           </section> 
+                       </div>
+                   </div>
+                    
+                   
+                   </div>
+                   </div>
+                   
+              </div>
+         
+         
+         <!-------End of footer---->
+    </body>
+</html>

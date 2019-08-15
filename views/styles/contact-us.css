@@ -1,0 +1,98 @@
+#heading-page{
+     background-image: url('https://www.ivyenterprisellc.com/wp-content/uploads/2016/01/sea-Ivy-bk-1.jpg');background-repeat:repeat;background-position:center center;
+     background-attachment:scroll;
+     background-size:cover; 
+     width:100%;
+     margin-top:150px;
+     color:white;
+     padding:20px;
+}
+#section-1{
+    background-color: transparent;
+    padding-left: 80px; 
+    padding-bottom: 50px;
+    margin-top:100px;
+    margin-bottom: 100px;
+}
+.contact-form input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    background-color: inherit;
+    border: 2px solid white;
+    border-radius: 2px;
+    padding:20px;
+    margin:20px 0;
+}
+.contact-form textarea{
+    width: 100%;
+    height: 150px;
+    margin:20px 0;
+    background: #f5f5f5;
+    background-color: inherit;
+    
+    border: 2px solid white;
+    padding-left: 10px;
+    
+}
+ .contact-form button{
+     width: 200px;
+     height: 40px;
+ }
+
+  .adressheader{
+     color: white;
+     text-align:left;
+     left:-45px;
+     position:relative;
+     
+     
+      }
+ .glyphicon-map-marker{
+     margin-top:15px;
+     padding:0;
+     
+ }
+ #section-2{
+     margin:0;
+     color: gray;
+     padding:0 70px;
+    
+     margin-bottom: 20px;
+ }
+ #section-2 p{
+     color: lightgrey;
+     
+ }
+ small{
+     color: lightgray;
+ }
+ 
+ #UIdsplay{
+     
+     background:url('/images/contact-bg.jpg') no-repeat center center;/*#2b2a44; *#063d3b;*/
+     color:white;
+     background-size:cover;
+     background-attachment: fixed;
+ }
+ .contact-form input[type="email"],  .contact-form input[type="number"]{
+     width:49%;
+ }
+ .jumbotron{
+     background-color: transparent;
+     font-weight: 900;
+     font-size:80px;
+     text-align:center;
+     border:2px solid;
+    box-shadow: 8px 8px;
+ }
+ #MainNav{
+     background-color:black;/*#1db7b2;*/
+     opacity: 1;
+ }
+ #MainNav a{
+     color:white;
+ }
+ .contact-wraper{
+      background-color:rgba(0, 0, 0, 0.3);
+ }
